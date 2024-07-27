@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxfks36g5g1kk"]
+
+[ext_resource type="Texture2D" uid="uid://dvwl4g3nup5cv" path="res://Place_holder_sprites_&_object/twin_kiss.jpg" id="1_tq6a4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b4a0m"]
+size = Vector2(1136, 124)
+
+[node name="FloorTestObject" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.136, 0.124)
+texture = ExtResource("1_tq6a4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_b4a0m")

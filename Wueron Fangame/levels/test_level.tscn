@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3nf5131i4lt3"]
+
+[ext_resource type="Script" path="res://levels/TestLevel.gd" id="1_jcdf3"]
+[ext_resource type="PackedScene" uid="uid://co3fj6oshln5x" path="res://players/player.tscn" id="2_mgunj"]
+[ext_resource type="PackedScene" uid="uid://bxfks36g5g1kk" path="res://objects/floor_test_object.tscn" id="3_vgt5t"]
+
+[node name="TestLevel" type="Node2D"]
+position = Vector2(0, -1)
+script = ExtResource("1_jcdf3")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_mgunj")]
+position = Vector2(86, 52)
+
+[node name="FloorTestObject" parent="." instance=ExtResource("3_vgt5t")]
+position = Vector2(58, 225)
