@@ -94,7 +94,7 @@ animations = [{
 radius = 20.0
 height = 78.0
 
-[node name="CharacterBody2D" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "input_component", "movement_component", "animation_component", "jump_component")]
+[node name="CharacterBody2D" type="CharacterBody2D" node_paths=PackedStringArray("input_component", "movement_component", "animation_component", "jump_component")]
 script = ExtResource("1_n8emo")
 gravity_component = NodePath("GravityComponent")
 input_component = NodePath("InputComponent")
